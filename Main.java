@@ -1,14 +1,16 @@
-import java.util.Scanner;
+import java.util.*;
 
+// Q2 Write ajava program to display all factors of a given number. The number must be provided by the user during run time.
 
-// Q2 Write a java program to display all the factors of a given numnber. The number must be provided by user during run time.
-
-class Main {
+public class Main {
   public static void main(String[] args) {
-    Scanner numberInput = new Scanner(System.in);
-    
-    System.out.println("Temperature in \u00B0Celsius: " + celsiusTemp);
-    numberInput.close();
-  }
+    Scanner in = new Scanner(System.in);
+    int n = in.nextInt();
+    System.out.print("Factors of " + n + " are: ");
+    for (int i = 1; i <= n; ++i) {
+      if (n % i == 0) {
+        System.out.print(i + " ");
+      }
+    }   
+  }   
 }
-
